@@ -1,0 +1,44 @@
+*,::before,::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+h1{
+    text-align: center;
+}
+h2{
+    text-align: center;
+    margin:10px
+}
+
+.container{
+    background: rebeccapurple;
+    color:#fff;
+    width: 90%;
+    height: 200px;
+    margin: 0 auto;
+    display:flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.container > span {
+    width: 50%;
+    border: 5px solid #fff;
+    border-radius: 2%;
+    display: block;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gato {
+    border: 1px solid red;
+}
