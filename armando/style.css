@@ -1,0 +1,150 @@
+/* Importa una fuente moderna de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Estilos globales */
+body {
+  margin: 0;
+  /* Elimina el margen predeterminado */
+  font-family: 'Roboto', sans-serif;
+  /* Fuente moderna */
+  background-color: #f4f4f4;
+  /* Color de fondo suave */
+  padding: 20px;
+}
+
+/* Estilos para el contenedor */
+.container {
+  max-width: 800px;
+  /* Ancho máximo del contenedor */
+  margin: 0 auto;
+  /* Centra el contenedor */
+  padding: 20px;
+  /* Espaciado interno */
+  background-color: white;
+  /* Fondo blanco */
+  border-radius: 10px;
+  /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Sombra sutil */
+}
+
+/* Estilo para el título del blog */
+h1 {
+  font-size: 32px;
+  /* Tamaño de fuente grande */
+  text-align: center;
+  /* Centra el título */
+  margin-bottom: 20px;
+  /* Espaciado inferior */
+}
+
+/* Estilos para el contenedor de las tarjetas de los artículos */
+.article-list {
+  display: flex;
+  /* Flexbox para organizar las tarjetas */
+  flex-wrap: wrap;
+  /* Permite que las tarjetas se ajusten a la línea */
+  gap: 20px;
+  /* Espaciado entre las tarjetas */
+  justify-content: center;
+  /* Centra las tarjetas */
+}
+
+/* Estilos para cada tarjeta de los artículos */
+.article-card {
+  width: calc(33% - 20px);
+  /* Ancho de cada tarjeta */
+  background-color: #f8f8f8;
+  /* Color de fondo suave */
+  border-radius: 8px;
+  /* Bordes redondeados */
+  overflow: hidden;
+  /* Oculta el contenido desbordado */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.322);
+  /* Sombra sutil */
+ 
+  align-items: center;
+  /* Centra verticalmente los elementos internos */
+  justify-content: center;
+  /* Centra verticalmente y horizontalmente los elementos internos */
+  text-align: center;
+  /* Centra los elementos interiores */
+}
+
+/* Estilos para la imagen del artículo */
+.article-image {
+  width: 100%;
+  /* Imagen ocupa todo el ancho de la tarjeta */
+  height: 200px;
+  /* Altura fija de la imagen */
+  object-fit: cover;
+  /* Ajusta la imagen para que cubra la tarjeta */
+  transition: transform 0.3s ease;
+    /* Transición suave */
+}
+
+/* Efecto al pasar el ratón sobre cada imagen de las tarjetastarjeta */
+.article-image:hover {
+  transform: translateY(-5px);
+  /* Levanta la tarjeta */
+}
+
+.tech-icons {
+  list-style: none;
+  /* Elimina las viñetas de la lista */
+  display: flex;
+  /* Organiza los íconos en línea */
+  justify-content: center;
+  /* Centra los íconos horizontalmente */
+  align-items: center;
+  /* Centra verticalmente los íconos */
+  gap: 10px;
+
+}
+
+/* Estilo para cada ícono de tecnología */
+.tech-icons li i {
+  display: block;
+  /* Muestra los íconos como un bloque */
+  font-size: 24px;
+  /* Tamaño de los íconos */
+}
+
+.article-card .tech-icons {
+  margin: 0;
+  /* Establece el margen a 0 */
+  padding: 0;
+  /* Establece el padding a 0 */
+}
+
+/* Estilo para el título del artículo */
+.article-title {
+  font-size: 20px;
+  /* Tamaño de fuente mediano */
+  font-weight: 700;
+  /* Negrita */
+  padding: 10px 15px;
+  /* Espaciado interno */
+}
+
+/* Estilo para el enlace del artículo */
+.article-link {
+  display: block;
+  /* Muestra el enlace como un bloque */
+  padding: 10px 15px;
+  /* Espaciado interno */
+  text-decoration: none;
+  /* Elimina la decoración del enlace */
+  color: #007bff;
+  /* Color azul */
+  font-weight: 700;
+  /* Negrita */
+  transition: color 0.3s ease;
+  /* Transición suave */
+}
+
+/* Cambia el color del enlace al pasar el ratón */
+.article-link:hover {
+  color: #0056b3;
+  /* Cambia el color al azul más oscuro */
+}
