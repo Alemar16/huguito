@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+/* Estilos globales */
+body {
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #747171;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Estilo para el contenedor principal */
+.container {
+  background-color: white;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 500px;
+  text-align: center;
+}
+
+/* Estilo para el título */
+h1 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+/* Estilo para las instrucciones */
+.instructions {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+/* Estilo para el contenedor de botones */
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+/* Estilo para los botones */
+.button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Efecto al pasar el ratón sobre los botones */
+.button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
