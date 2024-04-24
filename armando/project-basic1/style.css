@@ -1,0 +1,247 @@
+/* Importación de fuente de Google */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+/* Importa la fuente 'Poppins' de Google Fonts en diferentes pesos de fuente (300, 400, 500, 600) */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  /* Establece un estilo global para todos los elementos, eliminando el margen y el relleno predeterminados y aplicando la fuente 'Poppins' */
+}
+
+body {
+  height: 100vh;
+  /* Establece la altura de la página a 100% de la altura de la ventana */
+  display: flex;
+  /* Utiliza el modelo de caja flexible para el diseño */
+  align-items: center;
+  /* Centra verticalmente el contenido dentro del cuerpo */
+  justify-content: center;
+  /* Centra horizontalmente el contenido dentro del cuerpo */
+  background-color: #f4f4f4;
+  /* Color de fondo de la página */
+}
+
+/* Estilo para el contenedor de la tarjeta de perfil */
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  /* Organiza los elementos internos en columna */
+  align-items: center;
+  /* Centra horizontalmente los elementos internos */
+  max-width: 370px;
+  /* Establece el ancho máximo de la tarjeta */
+  width: 100%;
+  /* La tarjeta ocupa el 100% del ancho disponible */
+  background: #fff;
+  /* Fondo blanco para la tarjeta */
+  border-radius: 24px;
+  /* Bordes redondeados */
+  padding: 25px;
+  /* Espaciado interno */
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  /* Sombra sutil para dar efecto 3D */
+  position: relative;
+  /* Posiciona la tarjeta de forma relativa */
+}
+
+/* Estilo del encabezado visual de la tarjeta (antes de otros elementos) */
+.profile-card::before {
+  content: "";
+  /* Crea un elemento pseudo-elemento vacío */
+  top: 0;
+  left: 0;
+  position: absolute;
+  /* Posiciona el elemento de forma absoluta */
+  height: 36%;
+  /* Altura del encabezado visual */
+  width: 100%;
+  /* Ancho del encabezado visual */
+  border-radius: 24px 24px 0 0;
+  /* Bordes redondeados solo en la parte superior */
+  background-color: rgb(48, 13, 105);
+  /* Color de fondo del encabezado visual */
+}
+
+/* Estilo para el contenedor de la imagen de perfil */
+.image {
+  position: relative;
+  /* Posiciona el contenedor de forma relativa */
+  height: 150px;
+  /* Altura de la imagen */
+  width: 150px;
+  /* Ancho de la imagen */
+  border-radius: 50%;
+  /* Bordes redondeados en forma de círculo */
+  background-color: rgb(48, 13, 105);
+  /* Color de fondo del contenedor de la imagen */
+  padding: 3px;
+  /* Espaciado interno */
+  overflow: hidden;
+  /* Oculta el contenido que se desborda */
+  margin-bottom: 10px;
+  /* Espaciado inferior */
+}
+
+/* Estilo para la imagen de perfil dentro del contenedor de imagen */
+.image .profile-img {
+  height: 100%;
+  /* Ajusta la altura de la imagen al contenedor */
+  width: 100%;
+  /* Ajusta el ancho de la imagen al contenedor */
+  object-fit: cover;
+  /* Ajusta la imagen para que cubra el contenedor */
+  object-position: top center;
+  /* Centra la imagen horizontalmente y la posiciona en la parte superior */
+  border-radius: 50%;
+  /* Asegura que la imagen también sea redondeada */
+  border: 3px solid #fff;
+  /* Borde blanco alrededor de la imagen */
+  display: block;
+  /* Asegura que la imagen se comporte como un bloque */
+}
+
+/* Estilo para el contenedor de los datos de texto (nombre y trabajo) */
+.profile-card .text-data {
+  display: flex;
+  /* Utiliza el modelo de caja flexible para el diseño */
+  flex-direction: column;
+  /* Organiza los elementos internos en columna */
+  align-items: center;
+  /* Centra horizontalmente los elementos internos */
+}
+
+/* Estilo para el nombre dentro del contenedor de datos de texto */
+.text-data .name {
+  font-size: 22px;
+  /* Tamaño de fuente del nombre */
+  font-weight: 500;
+  /* Peso de fuente del nombre */
+}
+
+/* Estilo para el trabajo dentro del contenedor de datos de texto */
+.text-data .job {
+  font-size: 15px;
+  /* Tamaño de fuente del trabajo */
+  font-weight: 400;
+  /* Peso de fuente del trabajo */
+  margin-top: 5px;
+  /* Espaciado superior */
+}
+
+/* Estilo para el contenedor de los botones de redes sociales */
+.profile-card .media-buttons {
+  display: flex;
+  /* Utiliza el modelo de caja flexible para el diseño */
+  align-items: center;
+  /* Centra verticalmente los íconos */
+  justify-content: center;
+  /* Centra horizontalmente los íconos */
+  margin-top: 15px;
+  /* Espaciado superior */
+}
+
+/* Estilo para los enlaces de redes sociales dentro del contenedor de botones */
+.media-buttons .link {
+  display: flex;
+  /* Utiliza el modelo de caja flexible para el diseño */
+  align-items: center;
+  /* Centra verticalmente el contenido */
+  justify-content: center;
+  /* Centra horizontalmente el contenido */
+  color: #fff;
+  /* Color de fuente blanco */
+  font-size: 18px;
+  /* Tamaño de fuente de los íconos */
+  border-radius: 50%;
+  /* Bordes redondeados en forma de círculo */
+  background-color: rgb(48, 13, 105);
+  /* Color de fondo del botón */
+  margin: 0 8px;
+  /* Espaciado horizontal entre los botones */
+  height: 34px;
+  /* Altura del botón */
+  width: 34px;
+  /* Ancho del botón */
+  text-decoration: none;
+  /* Elimina la decoración de subrayado en los enlaces */
+}
+
+/* Estilo para el contenedor de los botones de acción (suscribirse y contactar) */
+.profile-card .buttons {
+  display: flex;
+  /* Utiliza el modelo de caja flexible para el diseño */
+  align-items: center;
+  /* Centra verticalmente los botones */
+  margin-top: 25px;
+  /* Espaciado superior */
+  gap: 10px;
+  /* Espaciado horizontal entre los botones */
+}
+
+/* Estilo para los botones de acción */
+.buttons .button {
+  background-color: rgb(108, 50, 202);
+  /* Color de fondo de los botones */
+  color: #fff;
+  /* Color de fuente blanco */
+  padding: 7px 15px;
+  /* Espaciado interno vertical y horizontal */
+  border: none;
+  /* Sin borde */
+  outline: none;
+  /* Sin contorno */
+  font-size: 16px;
+  /* Tamaño de fuente de los botones */
+  border-radius: 10px;
+  /* Bordes redondeados */
+  cursor: pointer;
+  /* Cursor en forma de mano al pasar sobre los botones */
+  transition: all 0.3s ease;
+  /* Transición suave para cambios de estilo */
+}
+
+/* Estilo para los botones de acción al pasar el ratón sobre ellos */
+.buttons .button:hover {
+  background-color: rgb(48, 13, 105);
+  /* Cambia el color de fondo de los botones al pasar el ratón */
+}
+
+/* Estilo para el contenedor de los datos de análisis (me gusta, comentarios, compartir) */
+.profile-card .analytics {
+  display: flex;
+  /* Utiliza el modelo de caja flexible para el diseño */
+  align-items: center;
+  /* Centra verticalmente los datos */
+  margin-top: 25px;
+  /* Espaciado superior */
+}
+
+/* Estilo para cada dato dentro del contenedor de datos de análisis */
+.analytics .data {
+  display: flex;
+  /* Utiliza el modelo de caja flexible para el diseño */
+  align-items: center;
+  /* Centra verticalmente los datos */
+  color: #333;
+  /* Color de fuente de los datos */
+  padding: 0 20px;
+  /* Espaciado horizontal interno */
+  border-right: 2px solid #e7e7e7;
+  /* Línea divisoria derecha */
+}
+
+/* Estilo para los iconos dentro de los datos de análisis */
+.data i {
+  font-size: 18px;
+  /* Tamaño de fuente de los iconos */
+  margin-right: 6px;
+  /* Espaciado derecho */
+}
+
+/* Estilo para el último dato dentro del contenedor de datos de análisis */
+.data:last-child {
+  border-right: none;
+  /* Elimina la línea divisoria derecha para el último dato */
+}
